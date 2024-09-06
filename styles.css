@@ -11,3 +11,12 @@
     background: #000;
 
 }
+
+.descriptionText{
+    text-align: center;
+}
+
+.titleText{
+    text-align: center;
+    font-size: 36px;
+}
