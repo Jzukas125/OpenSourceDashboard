@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Cybersecurity Open Source Dashboard</title>
 </head>
 
 <body style="background-color: #c5c6c7;">
@@ -24,16 +25,20 @@
         </div>
         <br></br>
 
+        <!-- Networking Tools Dropdown -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingNet">
+                    <h5 class="mb-0">
+                        <button class="titleText center btn btn-link" data-toggle="collapse" data-target="#collapseNet"
+                            aria-expanded="false" aria-controls="collapseNet">
+                            Networking Tools
+                        </button>
+                    </h5>
+                </div>
 
-        <!-- Add a drop down for each genre -->
-        <div>
-            <div id="accordion">
-                <div class="card">
-                    <!-- Networking tools dropdown -->
-                    <div class="genre center"> Networking tools </div>
-                    <div class="center padding">
-                        <!-- Add more tools for networking, have a dropdown for the tools -->
-
+                <div id="collapseNet" class="collapse center" aria-labelledby="headingNet" data-parent="#accordion">
+                    <div class="card-body">
                         <!-- Body for collaspible menu -->
                         <p>
                             <a class="networks btn btn-primary" data-toggle="collapse" href="#WireShark" role="button"
@@ -135,231 +140,281 @@
             </div>
         </div>
 
+        <!-- Security Monitoring tools dropdown -->
         <div id="accordion">
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingSMIDP">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
+                        <button class="titleText center btn btn-link" data-toggle="collapse"
+                            data-target="#collapseSMIDP" aria-expanded="false" aria-controls="collapseSMIDP">
+                            Security Monitoring, Intrusion detection/prevention
                         </button>
                     </h5>
                 </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseSMIDP" class="collapse center" aria-labelledby="headingSMIDP" data-parent="#accordion">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
+                        <!-- Entire body for collaspible menu -->
+                        <p>
+                            <a class="networks btn btn-primary" data-toggle="collapse" href="#Suricata" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Suricata
+                            </a>
+                        </p>
+
+                        <!-- Collpasiable card body -->
+                        <div class="collapse multi-collapse" id="Suricata">
+                            <div class="card card-body">
+                                Suricata is a network analysis and threat detection software used by most private and
+                                public
+                                organizations,
+                                and embedded by major vendors to protect their assets.
+                                Suricata boasts an impressive line up of features that include
+                                Lua scripting, IDS/IPS, High Performance (I would hope so), Logging HTTP requests,
+                                logging and storing TLS certificates, and extracting files from flows and store them to
+                                disk.
+                                Very widely used, and loved, SIEMs are the backbone of our security so it is imparative
+                                to have
+                                one.
+                                <a href="https://suricata.io/">Home Page</a>
+                                <a href="https://suricata.io/download/">Installation Page</a>
+                            </div>
+                        </div>
+                        <!-- End of the body for collapisble menu -->
+
+                        <!-- Entire body for collaspible menu -->
+                        <p>
+                            <a class="networks btn btn-primary" data-toggle="collapse" href="#OSSIM" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                OSSIM
+                            </a>
+                        </p>
+
+                        <!-- Collpasiable card body -->
+                        <div class="collapse multi-collapse" id="OSSIM">
+                            <div class="card card-body">
+                                OSSIM is a C++ written, geospatial image processing library used by many entities
+                                throughout the
+                                solar system.
+                                It has been in active development since the last millenium.
+                                It supports customizing your build by using environment variables and by directly
+                                editing the
+                                cmake configuration script.
+                                <a href="https://github.com/ossimlabs/ossim">Github Page</a>
+                                <a href="https://github.com/ossimlabs/ossim?tab=readme-ov-file#how-to-build">Installation
+                                    Guide</a>
+                            </div>
+                        </div>
+                        <!-- End of the body for collapisble menu -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingTI">
+                    <h5 class="mb-0">
+                        <button class="titleText center btn btn-link" data-toggle="collapse" data-target="#collapseTI"
+                            aria-expanded="false" aria-controls="collapseTI">
+                            Threat Intelligence
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseTI" class="collapse center" aria-labelledby="headingTI" data-parent="#accordion">
+                    <div class="card-body">
+                        <!-- Threat Intelligence tools dropdown -->
+                        <div class="center">
+                            <!-- Add more tools for networking, have a dropdown for the tools -->
+
+                            <!-- Entire body for collaspible menu -->
+                            <p>
+                                <a class="networks btn btn-primary" data-toggle="collapse" href="#AlienVault"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Alien Vault
+                                </a>
+                            </p>
+
+                            <!-- Collpasiable card body -->
+                            <div class="collapse multi-collapse" id="AlienVault">
+                                <div class="card card-body">
+                                    Open Threat Exchange aka Alien Vault allows everyone to openly collaborate to share
+                                    the latest
+                                    information about emerging threats , attack methods, and malicious actors.
+
+                                </div>
+                            </div>
+                            <!-- End of the body for collapisble menu -->
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Security Monitoring tools dropdown -->
-            <div class="genre center"> Security Monitoring, Intrusion detection/prevention </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+            <!-- Incident Response tools dropdown -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingIR">
+                        <h5 class="mb-0">
+                            <button class="titleText center btn btn-link" data-toggle="collapse"
+                                data-target="#collapseIR" aria-expanded="false" aria-controls="collapseIR">
+                                Incident Response
+                            </button>
+                        </h5>
+                    </div>
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Suricata" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Suricata
-                    </a>
-                </p>
+                    <div id="collapseIR" class="collapse center" aria-labelledby="headingIR" data-parent="#accordion">
+                        <div class="card-body">
+                            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="Suricata">
-                    <div class="card card-body">
-                        Suricata is a network analysis and threat detection software used by most private and public
-                        organizations,
-                        and embedded by major vendors to protect their assets.
-                        Suricata boasts an impressive line up of features that include
-                        Lua scripting, IDS/IPS, High Performance (I would hope so), Logging HTTP requests,
-                        logging and storing TLS certificates, and extracting files from flows and store them to disk.
-                        Very widely used, and loved, SIEMs are the backbone of our security so it is imparative to have
-                        one.
-                        <a href="https://suricata.io/">Home Page</a>
-                        <a href="https://suricata.io/download/">Installation Page</a>
+                            <!-- Entire body for collaspible menu -->
+                            <p>
+                                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Example
+                                </a>
+                            </p>
+
+                            <!-- Collpasiable card body -->
+                            <div class="collapse multi-collapse" id="Example">
+                                <div class="card card-body">
+
+                                </div>
+                            </div>
+                            <!-- End of the body for collapisble menu -->
+
+                        </div>
                     </div>
                 </div>
-                <!-- End of the body for collapisble menu -->
+            </div>
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#OSSIM" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        OSSIM
-                    </a>
-                </p>
+            <!-- Vulnerability Assessment tools dropdown -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="titleText center btn btn-link" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Vulnerability Assessment
+                            </button>
+                        </h5>
+                    </div>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="OSSIM">
-                    <div class="card card-body">
-                        OSSIM is a C++ written, geospatial image processing library used by many entities throughout the
-                        solar system.
-                        It has been in active development since the last millenium.
-                        It supports customizing your build by using environment variables and by directly editing the
-                        cmake configuration script.
-                        <a href="https://github.com/ossimlabs/ossim">Github Page</a>
-                        <a href="https://github.com/ossimlabs/ossim?tab=readme-ov-file#how-to-build">Installation
-                            Guide</a>
+                    <div id="collapseFive" class="collapse center" aria-labelledby="headingFive"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <a class="networks btn btn-primary" data-toggle="collapse" href="#ExampleVA"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Example VA
+                                </a>
+                            </p>
+                            <div class="collapse multi-collapse" id="ExampleVA">
+                                <div class="card card-body">
+                                    Content for Vulnerability Assessment tools.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
-        </div>
 
-        <!-- Threat Intelligence tools dropdown -->
-        <div class="genre center"> Threat Intelligence </div>
-        <div class="center">
-            <!-- Add more tools for networking, have a dropdown for the tools -->
+            <!-- Firewall tools dropdown -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingFirewall">
+                        <h5 class="mb-0">
+                            <button class="titleText center btn btn-link" data-toggle="collapse"
+                                data-target="#collapseFirewall" aria-expanded="false" aria-controls="collapseFirewall">
+                                Firewall
+                            </button>
+                        </h5>
+                    </div>
 
-            <!-- Entire body for collaspible menu -->
-            <p>
-                <a class="networks btn btn-primary" data-toggle="collapse" href="#AlienVault" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Alien Vault
-                </a>
-            </p>
-
-            <!-- Collpasiable card body -->
-            <div class="collapse multi-collapse" id="AlienVault">
-                <div class="card card-body">
-                    Open Threat Exchange aka Alien Vault allows everyone to openly collaborate to share the latest
-                    information about emerging threats , attack methods, and malicious actors.
-
+                    <div id="collapseFirewall" class="collapse center" aria-labelledby="headingFirewall"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <a class="networks btn btn-primary" data-toggle="collapse" href="#ExampleFW"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Example FW
+                                </a>
+                            </p>
+                            <div class="collapse multi-collapse" id="ExampleFW">
+                                <div class="card card-body">
+                                    Content for Firewall tools.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- End of the body for collapisble menu -->
 
-        </div>
-        </div>
+            <!-- Antivirus/Endpoint Protection tools dropdown -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingAntivirus">
+                        <h5 class="mb-0">
+                            <button class="titleText center btn btn-link" data-toggle="collapse"
+                                data-target="#collapseAntivirus" aria-expanded="false"
+                                aria-controls="collapseAntivirus">
+                                Antivirus/Endpoint Protection
+                            </button>
+                        </h5>
+                    </div>
 
-        <!-- Incident Response tools dropdown -->
-        <div class="genre center"> Incident Response </div>
-        <div class="center">
-            <!-- Add more tools for networking, have a dropdown for the tools -->
-
-            <!-- Entire body for collaspible menu -->
-            <p>
-                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                </a>
-            </p>
-
-            <!-- Collpasiable card body -->
-            <div class="collapse multi-collapse" id="Example">
-                <div class="card card-body">
-
+                    <div id="collapseAntivirus" class="collapse center" aria-labelledby="headingAntivirus"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <a class="networks btn btn-primary" data-toggle="collapse" href="#ExampleAV"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Example AV
+                                </a>
+                            </p>
+                            <div class="collapse multi-collapse" id="ExampleAV">
+                                <div class="card card-body">
+                                    Content for Antivirus/Endpoint Protection tools.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- End of the body for collapisble menu -->
 
-        </div>
-        </div>
+            <!-- Email Security tools dropdown -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingEmail">
+                        <h5 class="mb-0">
+                            <button class="titleText center btn btn-link" data-toggle="collapse"
+                                data-target="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+                                Email Security
+                            </button>
+                        </h5>
+                    </div>
 
-        <!-- Vulnerability Assessment tools dropdown -->
-        <div class="genre center"> Vulnerability Assessment </div>
-        <div class="center">
-            <!-- Add more tools for networking, have a dropdown for the tools -->
-
-            <!-- Entire body for collaspible menu -->
-            <p>
-                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                </a>
-            </p>
-
-            <!-- Collpasiable card body -->
-            <div class="collapse multi-collapse" id="Example">
-                <div class="card card-body">
-
+                    <div id="collapseEmail" class="collapse center" aria-labelledby="headingEmail"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                <a class="networks btn btn-primary" data-toggle="collapse" href="#ExampleEmail"
+                                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Example Email
+                                </a>
+                            </p>
+                            <div class="collapse multi-collapse" id="ExampleEmail">
+                                <div class="card card-body">
+                                    Content for Email Security tools.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- End of the body for collapisble menu -->
 
-        </div>
-        </div>
-
-        <!-- Firewall tools dropdown -->
-        <div class="genre center"> Firewall </div>
-        <div class="center">
-            <!-- Add more tools for networking, have a dropdown for the tools -->
-
-            <!-- Entire body for collaspible menu -->
-            <p>
-                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                </a>
-            </p>
-
-            <!-- Collpasiable card body -->
-            <div class="collapse multi-collapse" id="Example">
-                <div class="card card-body">
-
-                </div>
-            </div>
-            <!-- End of the body for collapisble menu -->
-
-        </div>
-        </div>
-
-        <!-- Antivirus/Endpoint Protection tools dropdown -->
-        <div class="genre center"> Antivirus/Endpoint Protection </div>
-        <div class="center">
-            <!-- Add more tools for networking, have a dropdown for the tools -->
-
-            <!-- Entire body for collaspible menu -->
-            <p>
-                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                </a>
-            </p>
-
-            <!-- Collpasiable card body -->
-            <div class="collapse multi-collapse" id="Example">
-                <div class="card card-body">
-
-                </div>
-            </div>
-            <!-- End of the body for collapisble menu -->
-
-        </div>
-        </div>
-
-        <!-- Email Security tools dropdown -->
-        <div class="genre center"> Email Security </div>
-        <div class="center">
-            <!-- Add more tools for networking, have a dropdown for the tools -->
-
-            <!-- Entire body for collaspible menu -->
-            <p>
-                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Example
-                </a>
-            </p>
-
-            <!-- Collpasiable card body -->
-            <div class="collapse multi-collapse" id="Example">
-                <div class="card card-body">
-
-                </div>
-            </div>
-            <!-- End of the body for collapisble menu -->
-
-        </div>
-        </div>
 
     </main>
 
