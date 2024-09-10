@@ -1,157 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body style="background-color: #c5c6c7;">
     <header class="titleText">
         Welcome to an Open Source Tool Dashboard
     </header>
-    <main >
-        <div class="descriptionText"> Cyber Security Tools are important, and can be even considered part of your knowledge base. The reason why the website is being made so I can categorize tools I have come across and make a neat looking hub to store them. </div>
+    <main>
+        <div class="descriptionText">
+            Cyber Security Tools are important, and can be even considered part of your knowledge base.
+            The reason why the website is being made so I can categorize tools I have come across and make a neat
+            looking hub to store them.
+        </div>
         <br></br>
 
+
         <!-- Add a drop down for each genre -->
-         <div>
-            <!-- Networking tools dropdown -->
-         <div class="genre center"> Networking tools </div>
-            <div class="center padding">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div>
+            <div id="accordion">
+                <div class="card">
+                    <!-- Networking tools dropdown -->
+                    <div class="genre center"> Networking tools </div>
+                    <div class="center padding">
+                        <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#WireShark" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      WireShark
-                    </a>
-                </p>
+                        <!-- Body for collaspible menu -->
+                        <p>
+                            <a class="networks btn btn-primary" data-toggle="collapse" href="#WireShark" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                WireShark
+                            </a>
+                        </p>
 
-                  <!-- Collpasiable card body -->
-                  <div class="collapse multi-collapse" id="WireShark">
-                    <div class="card card-body padding">
-                        Wireshark is an open-source software application that is one of the most popular network protocol analyzers. 
-                        Many people use it to capture and analyze data across a computer network. 
-                        It facilitates detailed analyses of packets, exposing network protocol layers so users can effectively stare into events inside the network and manage flows, perform protocol investigations, probe faults, and explore their network and security domains.
-                        It is considered one of the most significant essential tools to have at your disposal.
-                        <a href="https://github.com/wireshark/wireshark">Github Home Page</a>
-                        <a href="https://www.wireshark.org/download.html">Installation Guide </a>
+                        <!-- Collpasiable card body -->
+                        <div class="collapse multi-collapse" id="WireShark">
+                            <div class="card card-body padding">
+                                Wireshark is an open-source software application that is one of the most popular network
+                                protocol analyzers.
+                                Many people use it to capture and analyze data across a computer network.
+                                It facilitates detailed analyses of packets, exposing network protocol layers so users
+                                can effectively stare into events inside the network and manage flows, perform protocol
+                                investigations, probe faults, and explore their network and security domains.
+                                It is considered one of the most significant essential tools to have at your disposal.
+                                <a href="https://github.com/wireshark/wireshark">Github Home Page</a>
+                                <a href="https://www.wireshark.org/download.html">Installation Guide </a>
+                            </div>
+                        </div>
+                        <!-- End of the body for collapisble menu -->
+
+                        <!-- Body for collaspible menu -->
+                        <p>
+                            <a class="networks btn btn-primary" data-toggle="collapse" href="#Nmap" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Nmap
+                            </a>
+                        </p>
+
+                        <!-- Collpasiable card body -->
+                        <div class="collapse multi-collapse" id="Nmap">
+                            <div class="card card-body padding">
+                                Network Mapper (known as Nmap) is a freely available tool for network exploration and
+                                security assessment purposes.
+                                This software works by examining networks through the transmission of packets and the
+                                responses they receive.
+                                It offers insights into hosts' details and information about services and accessible
+                                network ports.
+                                The versatility of Nmap allows it to perform functions like discovering vulnerabilities
+                                in systems, creating inventories of networks, monitoring the availability of services,
+                                and detecting any unauthorized devices connected to the network.
+                                It is one of the most basic tools to utilize and one of the most essential.
+                                <a href="https://nmap.org/">Home Page</a>
+                                <a href="https://nmap.org/download.html">Installation Guide </a>
+                            </div>
+                        </div>
+                        <!-- End of the body for collapisble menu -->
+
+                        <!-- Entire body for collaspible menu -->
+                        <p>
+                            <a class="networks btn btn-primary" data-toggle="collapse" href="#RustScan" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                RustScan
+                            </a>
+                        </p>
+
+                        <!-- Collpasiable card body -->
+                        <div class="collapse multi-collapse" id="RustScan">
+                            <div class="card card-body padding">
+                                A rapid port scanner that can scan all 65k ports in 3 seconds.
+                                It boasts full scripting engine support that can pipe output into Nmap.
+                                It uses adaptive learning that will fine-tune itself to match your OS.
+                                It also allows automatic piping into Nmap for every (ethical) hacker's desire.
+                                <a href="https://github.com/RustScan/RustScan">Github Home Page</a>
+                                <a href="https://github.com/RustScan/RustScan/wiki/Installation-Guide">Installation
+                                    Guide </a>
+                            </div>
+                        </div>
+                        <!-- End of the body for collapisble menu -->
+
+                        <!-- Entire body for collaspible menu -->
+                        <p>
+                            <a class="networks btn btn-primary" data-toggle="collapse" href="#ns-3" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                ns-3
+                            </a>
+                        </p>
+
+                        <!-- Collpasiable card body -->
+                        <div class="collapse multi-collapse" id="ns-3">
+                            <div class="card card-body padding">
+                                ns-3 is a discrete-event network simulator, that is targeted primarily for research and
+                                educational use.
+                                ns-3 software infrastructure encourages the development of simulation models which are
+                                sufficiently realistic to allow ns-3 to be used as a realtime network emulator,
+                                interconnected with the real world and which allows many existing real-world protocol
+                                implementations to be reused within ns-3.
+                                Very helpful if setting up any networks and need to check its validaility.
+                                <a href="https://www.nsnam.org/">Home Page</a>
+                                <a href="https://www.nsnam.org/releases/">Versions for Installation </a>
+                            </div>
+                        </div>
+                        <!-- End of the body for collapisble menu -->
                     </div>
-                  </div>
-                <!-- End of the body for collapisble menu -->
-
-                <!-- Body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Nmap" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      Nmap
-                    </a>
-                </p>
-
-                  <!-- Collpasiable card body -->
-                  <div class="collapse multi-collapse" id="Nmap">
-                    <div class="card card-body padding">
-                        Network Mapper (known as Nmap) is a freely available tool for network exploration and security assessment purposes. 
-                        This software works by examining networks through the transmission of packets and the responses they receive. 
-                        It offers insights into hosts' details and information about services and accessible network ports. 
-                        The versatility of Nmap allows it to perform functions like discovering vulnerabilities in systems, creating inventories of networks, monitoring the availability of services, and detecting any unauthorized devices connected to the network. 
-                        It is one of the most basic tools to utilize and one of the most essential.
-                        <a href="https://nmap.org/">Home Page</a>
-                        <a href="https://nmap.org/download.html">Installation Guide </a>
-                    </div>
-                  </div>
-                <!-- End of the body for collapisble menu -->
-
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#RustScan" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      RustScan
-                    </a>
-                </p>
-
-                  <!-- Collpasiable card body -->
-                  <div class="collapse multi-collapse" id="RustScan">
-                    <div class="card card-body padding">
-                        A rapid port scanner that can scan all 65k ports in 3 seconds.
-                        It boasts full scripting engine support that can pipe output into Nmap. 
-                        It uses adaptive learning that will fine-tune itself to match your OS. 
-                        It also allows automatic piping into Nmap for every (ethical) hacker's desire.
-                        <a href="https://github.com/RustScan/RustScan">Github Home Page</a>
-                        <a href="https://github.com/RustScan/RustScan/wiki/Installation-Guide">Installation Guide </a>
-                    </div>
-                  </div>
-                <!-- End of the body for collapisble menu -->
-
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#ns-3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      ns-3
-                    </a>
-                </p>
-
-                  <!-- Collpasiable card body -->
-                  <div class="collapse multi-collapse" id="ns-3">
-                    <div class="card card-body padding">
-                        ns-3 is a discrete-event network simulator, that is targeted primarily for research and educational use.
-                        ns-3 software infrastructure encourages the development of simulation models which are sufficiently realistic to allow ns-3 to be used as a realtime network emulator, 
-                        interconnected with the real world and which allows many existing real-world protocol implementations to be reused within ns-3.
-                        Very helpful if setting up any networks and need to check its validaility. 
-                        <a href="https://www.nsnam.org/">Home Page</a>
-                        <a href="https://www.nsnam.org/releases/">Versions for Installation </a>
-                    </div>
-                  </div>
-                <!-- End of the body for collapisble menu -->
-
+                </div>
             </div>
         </div>
 
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+
             <!-- Security Monitoring tools dropdown -->
-        <div class="genre center"> Security Monitoring, Intrusion detection/prevention </div>
+            <div class="genre center"> Security Monitoring, Intrusion detection/prevention </div>
             <div class="center">
                 <!-- Add more tools for networking, have a dropdown for the tools -->
 
                 <!-- Entire body for collaspible menu -->
                 <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Suricata" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      Suricata
+                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Suricata" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Suricata
                     </a>
                 </p>
 
-                  <!-- Collpasiable card body -->
-                  <div class="collapse multi-collapse" id="Suricata">
+                <!-- Collpasiable card body -->
+                <div class="collapse multi-collapse" id="Suricata">
                     <div class="card card-body">
-                        Suricata is a network analysis and threat detection software used by most private and public organizations, 
+                        Suricata is a network analysis and threat detection software used by most private and public
+                        organizations,
                         and embedded by major vendors to protect their assets.
-                        Suricata boasts an impressive line up of features that include 
-                        Lua scripting, IDS/IPS, High Performance (I would hope so), Logging HTTP requests, 
+                        Suricata boasts an impressive line up of features that include
+                        Lua scripting, IDS/IPS, High Performance (I would hope so), Logging HTTP requests,
                         logging and storing TLS certificates, and extracting files from flows and store them to disk.
-                        Very widely used, and loved, SIEMs are the backbone of our security so it is imparative to have one.
+                        Very widely used, and loved, SIEMs are the backbone of our security so it is imparative to have
+                        one.
                         <a href="https://suricata.io/">Home Page</a>
                         <a href="https://suricata.io/download/">Installation Page</a>
                     </div>
-                  </div>
+                </div>
                 <!-- End of the body for collapisble menu -->
 
                 <!-- Entire body for collaspible menu -->
                 <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#OSSIM" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      OSSIM
+                    <a class="networks btn btn-primary" data-toggle="collapse" href="#OSSIM" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        OSSIM
                     </a>
                 </p>
 
-                  <!-- Collpasiable card body -->
-                  <div class="collapse multi-collapse" id="OSSIM">
+                <!-- Collpasiable card body -->
+                <div class="collapse multi-collapse" id="OSSIM">
                     <div class="card card-body">
-                        OSSIM is a C++ written, geospatial image processing library used by many entities throughout the solar system.
+                        OSSIM is a C++ written, geospatial image processing library used by many entities throughout the
+                        solar system.
                         It has been in active development since the last millenium.
-                        It supports customizing your build by using environment variables and by directly editing the cmake configuration script. 
+                        It supports customizing your build by using environment variables and by directly editing the
+                        cmake configuration script.
                         <a href="https://github.com/ossimlabs/ossim">Github Page</a>
-                        <a href="https://github.com/ossimlabs/ossim?tab=readme-ov-file#how-to-build">Installation Guide</a>
+                        <a href="https://github.com/ossimlabs/ossim?tab=readme-ov-file#how-to-build">Installation
+                            Guide</a>
                     </div>
-                  </div>
+                </div>
                 <!-- End of the body for collapisble menu -->
 
             </div>
@@ -159,150 +217,164 @@
 
         <!-- Threat Intelligence tools dropdown -->
         <div class="genre center"> Threat Intelligence </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div class="center">
+            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#AlienVault" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <!-- Entire body for collaspible menu -->
+            <p>
+                <a class="networks btn btn-primary" data-toggle="collapse" href="#AlienVault" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     Alien Vault
-                    </a>
-                </p>
+                </a>
+            </p>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="AlienVault">
-                    <div class="card card-body">
-                    Open Threat Exchange aka Alien Vault allows everyone to openly collaborate to share the latest information about emerging threats , attack methods, and malicious actors.
-                    
-                    </div>
+            <!-- Collpasiable card body -->
+            <div class="collapse multi-collapse" id="AlienVault">
+                <div class="card card-body">
+                    Open Threat Exchange aka Alien Vault allows everyone to openly collaborate to share the latest
+                    information about emerging threats , attack methods, and malicious actors.
+
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
+            <!-- End of the body for collapisble menu -->
+
+        </div>
         </div>
 
         <!-- Incident Response tools dropdown -->
         <div class="genre center"> Incident Response </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div class="center">
+            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <!-- Entire body for collaspible menu -->
+            <p>
+                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     Example
-                    </a>
-                </p>
+                </a>
+            </p>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="Example">
-                    <div class="card card-body">
-                        
-                    </div>
+            <!-- Collpasiable card body -->
+            <div class="collapse multi-collapse" id="Example">
+                <div class="card card-body">
+
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
+            <!-- End of the body for collapisble menu -->
+
+        </div>
         </div>
 
         <!-- Vulnerability Assessment tools dropdown -->
         <div class="genre center"> Vulnerability Assessment </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div class="center">
+            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <!-- Entire body for collaspible menu -->
+            <p>
+                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     Example
-                    </a>
-                </p>
+                </a>
+            </p>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="Example">
-                    <div class="card card-body">
-                        
-                    </div>
+            <!-- Collpasiable card body -->
+            <div class="collapse multi-collapse" id="Example">
+                <div class="card card-body">
+
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
+            <!-- End of the body for collapisble menu -->
+
+        </div>
         </div>
 
         <!-- Firewall tools dropdown -->
         <div class="genre center"> Firewall </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div class="center">
+            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <!-- Entire body for collaspible menu -->
+            <p>
+                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     Example
-                    </a>
-                </p>
+                </a>
+            </p>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="Example">
-                    <div class="card card-body">
-                        
-                    </div>
+            <!-- Collpasiable card body -->
+            <div class="collapse multi-collapse" id="Example">
+                <div class="card card-body">
+
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
+            <!-- End of the body for collapisble menu -->
+
+        </div>
         </div>
 
         <!-- Antivirus/Endpoint Protection tools dropdown -->
         <div class="genre center"> Antivirus/Endpoint Protection </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div class="center">
+            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <!-- Entire body for collaspible menu -->
+            <p>
+                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     Example
-                    </a>
-                </p>
+                </a>
+            </p>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="Example">
-                    <div class="card card-body">
-                        
-                    </div>
+            <!-- Collpasiable card body -->
+            <div class="collapse multi-collapse" id="Example">
+                <div class="card card-body">
+
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
+            <!-- End of the body for collapisble menu -->
+
+        </div>
         </div>
 
         <!-- Email Security tools dropdown -->
         <div class="genre center"> Email Security </div>
-            <div class="center">
-                <!-- Add more tools for networking, have a dropdown for the tools -->
+        <div class="center">
+            <!-- Add more tools for networking, have a dropdown for the tools -->
 
-                <!-- Entire body for collaspible menu -->
-                <p>
-                    <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <!-- Entire body for collaspible menu -->
+            <p>
+                <a class="networks btn btn-primary" data-toggle="collapse" href="#Example" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     Example
-                    </a>
-                </p>
+                </a>
+            </p>
 
-                <!-- Collpasiable card body -->
-                <div class="collapse multi-collapse" id="Example">
-                    <div class="card card-body">
-                        
-                    </div>
+            <!-- Collpasiable card body -->
+            <div class="collapse multi-collapse" id="Example">
+                <div class="card card-body">
+
                 </div>
-                <!-- End of the body for collapisble menu -->
-
             </div>
+            <!-- End of the body for collapisble menu -->
+
+        </div>
         </div>
 
     </main>
 
     <!-- Jquery, Popper, and bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
     <script src="script.js"></script>
 </body>
+
 </html>
