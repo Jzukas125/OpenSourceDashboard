@@ -1,37 +1,42 @@
-.genre{
+.genre {
     font-size: 25px;
 }
 
 .center {
     display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.networks{
+.networks {
     color: white;
     background: #0b0c10;
     border-color: #1f2833;
 }
 
-.descriptionText{
+.descriptionText {
     text-align: center;
 }
 
-.titleText{
+.titleText {
     text-align: center;
     font-size: 30px;
     color: black;
 }
 
-.padding{
+.padding {
     margin-bottom: 10px;
     /* margin-top: 10px; */
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #1f2833;
-    border-color: #1f2833; /*set the color you want here*/
+    border-color: #1f2833;
+    /*set the color you want here*/
 }
