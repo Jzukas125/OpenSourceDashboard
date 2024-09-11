@@ -9,10 +9,14 @@
     text-align: center;
 }
 
-.networks {
+.collapsibleButton {
     color: white;
     background: #0b0c10;
     border-color: #1f2833;
+}
+
+.collapsibleButtonBody {
+    color: red;
 }
 
 .descriptionText {
@@ -38,4 +42,31 @@
     color: #fff;
     background-color: #1f2833;
     border-color: #1f2833;
+}
+
+/* Change the background color of the accordion header */
+.card-header {
+    background-color: #1f2833;
+    /* Change to your desired color */
+}
+
+/* Change the text color of the header button */
+.card-header .btn {
+    color: #c5c6c7;
+    /* Text of the accordion body */
+}
+
+/* Optionally change the hover and focus styles */
+.card-header .btn:hover,
+.card-header .btn:focus {
+    color: #45A29E;
+    /* Lighter color for better visibility on hover */
+}
+
+/* Change the background color of the collapsed content */
+.card-body {
+    background-color: #0b0c10;
+    /* Color of the background */
+    color: White;
+    /* Color of text */
 }
