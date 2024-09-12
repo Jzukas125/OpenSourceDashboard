@@ -70,3 +70,7 @@
     color: White;
     /* Color of text */
 }
+
+.accordionBody{
+    background-color: #0b0c10;
+}
